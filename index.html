@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemtas Basketball Club - Forging Champions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#1A1A1A]">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 py-4 header-sticky">
+        <div class="container mx-auto px-6">
+            <nav class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.89 10.72C16.21 13.06 14.28 14.73 12 14.73C9.72 14.73 7.79 13.06 7.11 10.72" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.72 7.11C13.06 7.79 14.73 9.72 14.73 12C14.73 14.28 13.06 16.21 10.72 16.89" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.11 13.28C4.94 12.55 3.27 10.65 3.27 8.24998C3.27 5.84998 4.94 3.94998 7.11 3.27998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.89 20.72C19.06 20.05 20.73 18.15 20.73 15.75C20.73 13.35 19.06 11.45 16.89 10.78" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <span class="text-xl font-bold tracking-wider">NEMTAS</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="nav-link text-gray-300 hover:text-white">About Us</a>
+                    <a href="#team" class="nav-link text-gray-300 hover:text-white">Team</a>
+                    <a href="#schedule" class="nav-link text-gray-300 hover:text-white">Schedule</a>
+                    <a href="#news" class="nav-link text-gray-300 hover:text-white">News</a>
+                </div>
+                <a href="#contact" class="hidden md:inline-block bg-primary text-white font-semibold px-6 py-2 rounded-full hover:bg-opacity-80 transition">Contact Us</a>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary">
+            <a href="#about" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">About Us</a>
+            <a href="#team" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Team</a>
+            <a href="#schedule" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Schedule</a>
+            <a href="#news" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">News</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-300 hover:bg-gray-800">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                <source src="ball.mp4" type="video/mp4">
+            </video>
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-10"></div>
+            <div class="relative z-20 px-6">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-wider leading-tight">
+                    <span class="text-primary">Nemtas</span> Basketball Club
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-300">
+                    Forging champions through discipline, teamwork, and a relentless spirit.
+                </p>
+                <a href="#contact" class="mt-8 inline-block bg-primary text-white font-bold px-10 py-4 rounded-full text-lg uppercase hover:bg-opacity-80 transition-transform transform hover:scale-105">
+                    Join The Team
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24 bg-secondary angled-section">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/333333/FFFFFF?text=Our+Team" alt="Nemtas Basketball Team" class="rounded-2xl shadow-lg w-full">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">More than a Team, <span class="text-primary">We're Family</span></h2>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Nemtas Basketball Club is dedicated to developing student-athletes of character. We provide a structured, competitive, and supportive environment where players hone their basketball skills while learning invaluable life lessons.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            All practices and home games are held at the SMKN 6 South Tangerang Sports Hall. We take pride in our facilities and the incredible support from our school community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet The Team Section -->
+        <section id="team" class="py-24 bg-[#1A1A1A] angled-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Meet <span class="text-primary">Our Team</span></h2>
+                
+                <!-- Coach Sub-section -->
+                <h3 class="text-2xl font-bold text-white mb-4">Head Coach</h3>
+                <div class="max-w-sm mx-auto mb-16">
+                    <div class="bg-secondary rounded-2xl p-8 player-card">
+                        <img src="https://placehold.co/200x200/444444/FFFFFF?text=R.+Syah" alt="Coach Rudiyansyah" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-700">
+                        <h3 class="text-xl font-bold">Rudiyansyah</h3>
+                        <p class="text-primary font-semibold">Licensed Coach</p>
+                        <p class="text-gray-400 mt-2 text-sm">A coach who helps students reach their peak performance and achieve greatness.</p>
+                    </div>
+                </div>
+
+                <!-- Players Sub-section -->
+                <h3 class="text-2xl font-bold text-white mb-8">The Squad</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Player Card: Bari -->
+                    <div class="bg-secondary rounded-2xl p-6 player-card">
+                        <img src="https://placehold.co/200x200/444444/FFFFFF?text=Bari+A." alt="Bari Achmad" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-primary">
+                        <h3 class="text-lg font-bold">Bari Hartanto A.</h3>
+                        <p class="text-primary font-semibold text-sm">#21 - MVP / Shooting Guard</p>
+                    </div>
+                    <!-- Player Card: Ibnu -->
+                    <div class="bg-secondary rounded-2xl p-6 player-card">
+                        <img src="https://placehold.co/200x200/444444/FFFFFF?text=Ibnu+S." alt="Ibnu Syahlendra" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-gray-700">
+                        <h3 class="text-lg font-bold">M.Ibnu Shaelendra</h3>
+                        <p class="text-primary font-semibold text-sm">#17 - Point Guard</p>
+                    </div>
+                    <!-- Player Card: Mavel -->
+                    <div class="bg-secondary rounded-2xl p-6 player-card">
+                        <img src="https://placehold.co/200x200/444444/FFFFFF?text=Teuku+M." alt="Teuku Mavel" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-gray-700">
+                        <h3 class="text-lg font-bold">Teuku Mavel Yuzar</h3>
+                        <p class="text-primary font-semibold text-sm">#32 - Small Forward</p>
+                    </div>
+                     <!-- Player Card: Radit -->
+                    <div class="bg-secondary rounded-2xl p-6 player-card">
+                        <img src="https://placehold.co/200x200/444444/FFFFFF?text=Maya+S." alt="Maya Sari" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-gray-700">
+                        <h3 class="text-lg font-bold">Raditya Al-Diswa Ismaili</h3>
+                        <p class="text-primary font-semibold text-sm">#15 - Point Guard</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="py-24 bg-secondary angled-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Game Schedule & <span class="text-primary">Results</span></h2>
+                <div class="overflow-x-auto rounded-2xl bg-[#1A1A1A]">
+                    <table class="w-full text-left">
+                        <thead class="bg-black/20 uppercase text-sm text-gray-400">
+                            <tr>
+                                <th class="p-4">Date</th>
+                                <th class="p-4">Opponent</th>
+                                <th class="p-4 hidden sm:table-cell">Location</th>
+                                <th class="p-4 text-right">Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-gray-800 schedule-table-row">
+                                <td class="p-4 font-semibold">Aug 30, 2025</td>
+                                <td class="p-4">SMK Fadilah</td>
+                                <td class="p-4 hidden sm:table-cell">Away</td>
+                                <td class="p-4 text-right font-bold text-green-400">W (39 - 19)</td>
+                            </tr>
+                             <tr class="border-t border-gray-800 schedule-table-row">
+                                <td class="p-4 font-semibold">Sep 21, 2025</td>
+                                <td class="p-4">SMKN 7 Tangsel</td>
+                                <td class="p-4 hidden sm:table-cell">Away</td>
+                                <td class="p-4 text-right font-bold text-green-400">W (49 - 22)</td>
+                            </tr>
+                            <tr class="border-t border-gray-800 schedule-table-row">
+                                <td class="p-4 font-semibold">Oct 04, 2025</td>
+                                <td class="p-4">SMKN 4 Tangsel</td>
+                                <td class="p-4 hidden sm:table-cell">Home</td>
+                                <td class="p-4 text-right font-bold text-gray-400">Upcoming</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="py-24 bg-[#1A1A1A] angled-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Latest <span class="text-primary">News</span></h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-secondary rounded-2xl overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/600x400/EE626B/FFFFFF?text=Champions!" alt="Team celebrating victory">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Nemtas Wins The City Tournament!</h3>
+                            <p class="text-gray-400 text-sm flex-grow">A glorious victory for our team after a fierce final match. The entire school is proud!</p>
+                            <a href="#" class="mt-4 text-primary font-semibold hover:underline">Read More →</a>
+                        </div>
+                    </div>
+                     <div class="bg-secondary rounded-2xl overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/600x400/444444/FFFFFF?text=Tryouts" alt="Basketball tryouts">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">New Member Tryouts Are Open!</h3>
+                            <p class="text-gray-400 text-sm flex-grow">We are looking for new talented prospects to join and strengthen the team this season. Are you the one?</p>
+                             <a href="#" class="mt-4 text-primary font-semibold hover:underline">More Info →</a>
+                        </div>
+                    </div>
+                     <div class="bg-secondary rounded-2xl overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/600x400/444444/FFFFFF?text=Training" alt="Intensive training session">
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Intensive Training With Pro Coach</h3>
+                            <p class="text-gray-400 text-sm flex-grow">This week, we held a special training camp to improve individual skills and team strategy.</p>
+                             <a href="#" class="mt-4 text-primary font-semibold hover:underline">View Gallery →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact/Join Section -->
+        <section id="contact" class="py-24 bg-secondary angled-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Become a <span class="text-primary">Legend</span></h2>
+                <p class="mt-4 max-w-2xl mx-auto text-gray-400">
+                    Ready to be a part of history? We're always looking for dedicated students from SMKN 6 South Tangerang to join our family.
+                </p>
+                <div class="mt-8 max-w-xl mx-auto">
+                     <form action="#" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full bg-[#1A1A1A] border border-gray-700 rounded-full px-6 py-3 text-white focus:outline-none focus:border-primary">
+                            <input type="email" placeholder="Your Email" class="w-full bg-[#1A1A1A] border border-gray-700 rounded-full px-6 py-3 text-white focus:outline-none focus:border-primary">
+                        </div>
+                        <textarea placeholder="Your Message" rows="4" class="w-full bg-[#1A1A1A] border border-gray-700 rounded-2xl px-6 py-3 text-white focus:outline-none focus:border-primary"></textarea>
+                        <button type="submit" class="w-full bg-primary text-white font-bold px-10 py-3 rounded-full text-lg uppercase hover:bg-opacity-80 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] pt-12 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">NEMTAS CLUB</h4>
+                    <p class="text-gray-400 text-sm">The Official Basketball Club of SMKN 6 South Tangerang.</p>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="text-gray-400 hover:text-primary">About</a></li>
+                        <li><a href="#schedule" class="text-gray-400 hover:text-primary">Schedule</a></li>
+                        <li><a href="#news" class="text-gray-400 hover:text-primary">News</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.585.07-4.85c.148-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441c0-.795-.645-1.44-1.441-1.44z"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-primary"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.212 3.791 4.649-.69.188-1.434.23-2.18.087.623 1.947 2.423 3.322 4.557 3.359-1.798 1.407-4.069 2.245-6.516 2.245-.42 0-.833-.024-1.237-.074 2.279 1.455 4.981 2.309 7.876 2.309 9.421 0 14.567-7.808 14.567-14.567 0-.221 0-.442-.014-.662.999-.724 1.862-1.632 2.555-2.656z"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+                <p>Copyright © 2025 Nemtas Basketball Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky Header on Scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
